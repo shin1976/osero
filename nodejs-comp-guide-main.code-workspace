@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "../nodejs-comp-guide-main"
+	},
+	{
+		"path": "../javascript-essence-tutorial"
+	},
+	{
+		"path": "../react入門"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "javascript-essence-tutorial"
+  }
+}

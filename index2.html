@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>osero</title>
+    <style>
+        #board {
+            background-color: #555555;
+
+        }
+
+        td.cell {
+            /* background-color: #FFB27F; */
+            background-color: #FFB27F;
+            width: 90px;
+            height: 90px;
+            margin: 3px;
+            font-size: 70px;
+            text-align: center;
+            user-select: none;
+            /* CSS3 */
+            -moz-user-select: none;
+            /* Firefox */
+            -webkit-user-select: none;
+            /* Safari、Chromeなど */
+            -ms-user-select: none;
+            /* IE10かららしい */
+
+
+        }
+
+        td.black {
+            color: black;
+        }
+
+        td.white {
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .formHideClass {
+            display: none;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        .table th:first-child {
+            border-radius: 5px 0 0 0;
+        }
+
+        .table th:last-child {
+            border-radius: 0 5px 0 0;
+            border-right: 1px solid #3c6690;
+        }
+
+        .table th {
+            text-align: center;
+            color: white;
+            background: linear-gradient(#829ebc, #225588);
+            border-left: 1px solid #3c6690;
+            border-top: 1px solid #3c6690;
+            border-bottom: 1px solid #3c6690;
+            box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+            width: 25%;
+            padding: 10px 0;
+        }
+
+        .table td {
+            text-align: center;
+            border-left: 1px solid #a8b7c5;
+            border-bottom: 1px solid #a8b7c5;
+            border-top: none;
+            box-shadow: 0px -3px 5px 1px #eee inset;
+            width: 25%;
+            padding: 10px 0;
+        }
+
+        .table td:last-child {
+            border-right: 1px solid #a8b7c5;
+        }
+
+        .table tr:last-child td:first-child {
+            border-radius: 0 0 0 5px;
+        }
+
+        .table tr:last-child td:last-child {
+            border-radius: 0 0 5px 0;
+        }
+
+        .btn-gradation {
+            display: inline-block;
+            width: 180px;
+            text-align: center;
+            font-size: 16px;
+            color: #FFF;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 24px;
+            border-radius: 4px;
+            background-image: linear-gradient(-90deg, #FF006E, #FFD500);
+            transition: .5s;
+            background-size: 200%;
+        }
+
+        .btn-gradation:hover {
+            background-position: right center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>
+            黒（あなた）：<span id="numBlack"></span>枚
+            白（PC）：<span id="numWhite"></span>枚
+        </h2>
+        <div class="boards">
+            <table id="board" alilgn="center"></table>
+            <h2 id="message"></h2>
+
+
+        </div>
+    </div>
+    <script src="./js/main2.js"></script>
+</body>
+
+</html>
