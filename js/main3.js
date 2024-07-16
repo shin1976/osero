@@ -16,6 +16,7 @@
   var central_vertical = Math.round(vertical / 2);
   var central_horizontal = Math.round(horizontal / 2);
 
+  //ここだけ変更すれば大丈夫
   var WeightData = [
     [45, -11, 4, -1, -1, 4, -11, 45],
     [-11, -16, -1, -3, -3, 2, -16, -11],
